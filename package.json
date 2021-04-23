@@ -1,6 +1,6 @@
 {
   "name": "@14islands/lerp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Frame rate independent linear interpolation function",
   "main": "index.js",
   "license": "MIT",
