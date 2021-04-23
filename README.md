@@ -5,7 +5,7 @@ This is a frame rate independent linear interpolation function based on [this ar
 ```js
 var lerp = require('@14islands/lerp')
 
-var res = lerp(a, b, t, frameDeltaMs, targetFps);
+var res = lerp(a, b, t, frameDelta, targetFps);
 ```
 
 ## Usage
@@ -15,12 +15,12 @@ var res = lerp(a, b, t, frameDeltaMs, targetFps);
 lerp(start, end, progress)
 
 // Interpolates and adjusts for the frame delta. Default target is 60fps.
-const frameDeltaMs = clock.getDelta() * 1000 
+const frameDelta = clock.getDelta()
 lerp(start, end, alpha, frameDeltaMs)
 
 // Adjust for frame delta targeting a 120fps refresh rate.
-const frameDeltaMs = clock.getDelta() * 1000
-lerp(start, end, alpha, frameDeltaMs, 120)
+const frameDelta = clock.getDelta()
+lerp(start, end, alpha, frameDelta, 120)
 ```
 
 ## Demo
