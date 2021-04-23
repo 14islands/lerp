@@ -1,0 +1,39 @@
+{
+  "name": "@14islands/lerp",
+  "version": "1.0.0",
+  "description": "Frame rate independent linear interpolation function",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "David Lindkvist @14islands",
+  "dependencies": {
+    "lerp": "^1.0.3"
+  },
+  "devDependencies": {
+    "tape": "~2.13.2"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/14islands/lerp.git"
+  },
+  "homepage": "https://github.com/14islands/lerp",
+  "bugs": {
+    "url": "https://github.com/14islands/lerp/issues"
+  },
+  "keywords": [
+    "linear",
+    "interpolation",
+    "lerp",
+    "interp",
+    "smoothstep",
+    "mix",
+    "anim",
+    "animation",
+    "animate",
+    "fps",
+    "independent",
+    "damping"
+  ]
+}
