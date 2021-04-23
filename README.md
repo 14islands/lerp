@@ -15,14 +15,16 @@ var res = lerp(a, b, t, frameDeltaMs, targetFps);
 lerp(start, end, progress)
 
 // Interpolates and adjusts for the frame delta. Default target is 60fps.
-const frameDeltaMs = clock.getDelta() / 1000 
+const frameDeltaMs = clock.getDelta() * 1000 
 lerp(start, end, alpha, frameDeltaMs)
 
 // Adjust for frame delta targeting a 120fps refresh rate.
-const frameDeltaMs = clock.getDelta() / 1000
+const frameDeltaMs = clock.getDelta() * 1000
 lerp(start, end, alpha, frameDeltaMs, 120)
 ```
 
+## Demo
+[Sandbox demo](https://codesandbox.io/s/fps-independent-lerp-pdiq2)
 
 ## License
 
