@@ -8,6 +8,11 @@ var lerp = require('@14islands/lerp')
 var res = lerp(a, b, t, frameDelta, targetFps);
 ```
 
+## Why?
+
+Some devices only run at 30fps, for instance iOS in battery saving mode.
+Some devices run faster, for instance Oculus Quest 2 runs at 90 fps, Macbook M1 Max and gaming PCs run at 120 fps.
+
 ## Usage
 
 ```js
